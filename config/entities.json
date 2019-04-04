@@ -1,126 +1,187 @@
 {
-    "O": {
-        "name": "coccinella",
+    "I": {
+        "name": "ingresso",
         "color": "red",
-        "description": "che bella!",
+        "description": "Questa sembra essere la porta che ti potrebbe far uscire dalla torre...",
         "interactions":  {
             "no-item": {
-                "message": "la schiacci",
-                "transform": " "
-            }
-        }
-    },
-    "H": {
-        "name": "idrogeno",
-        "description": "e' dell'idrogeno, non chiedermi come fai a percepirlo...",
-        "color": "magenta",
-        "interactions": {
-            "no-item": {
-                "message": "ma scusa... cosa ti aspetti di fare esattamente con l'idrogeno..."
+                "message": "E' bloccata... C'e' una serratura, devo trovare la chiave..."
             },
-            "L": {
-                "message": "opppero'! hai condito le lasagne con l'idrogeno sprigionando una reazione unicornosa",
-                "transform": "U"
-            }
-        }
-    },
-    "L": {
-        "name": "lasagne",
-        "description": "sembrano appetitose",
-        "color": "green",
-        "interactions": {
-            "no-item": {
-                "message": "fa sempre comodo avere delle lasagne in tasca",
-                "transform": " ",
-                "pickup": true
-            }
-        }
-    },
-    "B": {
-        "name": "bomba",
-        "description": "e' una bomba pronta a detonare, devo sbrigarmi a disinnescarla!",
-        "color": "red",
-        "interactions": {
-            "no-item": {
-                "message": "biiiip biiiiiiip biiiiiiiiiiiip",
-                "game_over": "la bomba esplode demolendo l'intera stanza"
-            },
-
-            "V": {
-                "message": "tagli con attenzione un filo che penzola da un lato dell'ordigno...",
-                "win": "hai disinnescato la bomba con successo, sei sano e salvo!"
-            },
-
-            "L": {
-                "message": "sei un pervertito"
-            }
-        }
-    },
-    "1": {
-        "name": "porta",
-        "description": "e' una porta",
-        "color": "blue",
-        "interactions": {
-            "no-item": {
-                "message": "si apre",
-                "move_to_room": 1
-            }
-        }
-    },
-    "2": {
-        "name": "porta",
-        "description": "e' una porta",
-        "color": "blue",
-        "interactions": {
-            "no-item": {
-                "message": "quale porta scusa???",
-                "transform": "L"
-            }
-        }
-    },
-    "0": {
-        "name": "porta",
-        "description": "e' una porta",
-        "color": "blue",
-        "interactions": {
-            "no-item": {
-                "message": "si apre",
-                "move_to_room": 0
-            }
-        }
-    },
-    "Q": {
-        "name": "quadro",
-        "description": "e' proprio un bel quadro",
-        "color": "blue",
-        "interactions": {
-            "no-item": {
-                "message": "spostando il quadro ti accorgi che dietro nasconte una cassaforte",
-                "transform": "F"
-            }
-        }
-    },
-
-    "F": {
-        "name": "cassaforte",
-        "description": "e' una cassaforte chiusa",
-        "color": "yellow",
-        "interactions": {
             "K": {
-                "message": "la chiave entra perfettamente nella serratura; la giri",
-                "transform": "V",
+                "message": "La chiave entra nella serratura, la porta si apre...",
+                "win": "felice esci da quella maledetta torre e torni a casa salterellando"
+            }
+        }
+    },
+
+    "L": {
+        "name": "lucchetto",
+        "color": "yellow",
+        "description": "E' un lucchetto che blocca la porta",
+        "interactions":  {
+            "no-item": {
+                "message": "Non penso funzioni così"
+            },
+            "C": {
+                "message": "La chiave entra perfettamente nel lucchetto",
+                "transform": "1",
                 "remove_from_inventory": true
             }
         }
     },
 
-    "V": {
-        "name": "Tenaglie",
-        "description": "sono delle tenaglie piuttosto affilate",
-        "color": "green",
-        "interactions": {
+    "A": {
+        "name": "armadio",
+        "color": "yellow",
+        "description": "E' un armadio vintage",
+        "interactions":  {
             "no-item": {
-                "message": "le raccogli",
+                "message": "All'interno trovi qualcosa di abbastanza utile",
+                "transform": "O"
+            }
+        }
+    },
+
+    "O": {
+        "name": "piccone",
+        "color": "red",
+        "description": "E' un piccone da minatore",
+        "interactions":  {
+            "no-item": {
+                "message": "Lo raccogli",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+
+    "C": {
+        "name": "chiave",
+        "color": "red",
+        "description": "E' una piccola chiave",
+        "interactions":  {
+            "no-item": {
+                "message": "La raccogli",
+                "transform": " ",
+                "pickup": true
+            }
+        }
+    },
+
+    "F": {
+        "name": "finestra",
+        "color": "green",
+        "description": "E' una finestra",
+        "interactions":  {
+            "no-item": {
+                "message": "Apri la finestra e ti affacci",
+                "game_over": "Perdi l'equilibrio e cadi dalla finestra, diventando una frittella"
+            }
+        }
+    },
+
+    "B": {
+        "name": "mobile",
+        "color": "black",
+        "description": "E' un mobile antico",
+        "interactions":  {
+            "no-item": {
+                "message": "Non succede nulla"
+            }
+        }
+    },
+
+    "M": {
+        "name": "masso",
+        "color": "red",
+        "description": "sembra che siano caduti dall'alto... ",
+        "interactions":  {
+            "no-item": {
+                "message": "Nulla da fare, sono troppo grandi per spostarli..."
+            },
+            "O": {
+                "message": "Col piccone riesci a spaccare il masso liberando il corridoio",
+                "transform": " "
+            }
+        }
+    },
+
+    "Q": {
+        "name": "quadro",
+        "color": "red",
+        "description": "Questo è un bellissimo quadro rinascimentale!",
+        "interactions":  {
+            "no-item": {
+                "message": "interessante, ma neanche troppo"
+            }
+        }
+    },
+
+    "T": {
+        "name": "tavolo",
+        "color": "magenta",
+        "description": "Questo è un tavolo, nulla di particolare",
+        "interactions":  {
+            "no-item": {
+                "message": "Cosa potrei farci con un tavolo?"
+            }
+        }
+    },
+
+    "S": {
+        "name": "sedia",
+        "color": "green",
+        "description": "Una sedia molto bella e comoda",
+        "interactions":  {
+            "no-item": {
+                "message": "Dopo esserti riposato, ti alzi e fai cadere la sedia, trovando qualcosa di interessante...",
+                "transform": "C"
+            }
+        }
+    },
+
+    "V": {
+        "name": "botte di vino",
+        "color": "blue",
+        "description": "queste botti di vino saranno qui da molto tempo...",
+        "interactions":  {
+            "no-item": {
+                "message": "mmm, vino di 50 anni fa, buono!"
+            }
+        }
+    },
+
+    "U": {
+        "name": "libreria",
+        "color": "blue",
+        "description": "E' una libreria con libri molto vecchi e rovinati",
+        "interactions":  {
+            "no-item": {
+                "message": "Muovendo uno di quei libri la libreria si sposta svelando un passaggio segreto",
+                "transform": "4"
+            }
+        }
+    },
+
+    "R": {
+        "name": "vaso di fiori",
+        "color": "red",
+        "description": "Questo fiore è appassito...",
+        "interactions":  {
+            "no-item": {
+                "message": "Spostando il vaso trovi qualcosa di interessante",
+                "transform": "K"
+            }
+        }
+    },
+
+    "K": {
+        "name": "chiave",
+        "color": "yellow",
+        "description": "E' una chiave molto scintillante",
+        "interactions":  {
+            "no-item": {
+                "message": "La raccogli",
                 "transform": " ",
                 "pickup": true
             }
@@ -128,85 +189,98 @@
     },
 
     "P": {
-        "name": "pianta",
-        "description": "questa pianta non viene annaffiata da molto tempo",
+        "name": "paracadute",
         "color": "green",
-        "interactions": {
+        "description": "Questo paracadute e' un po' vecchio, ma dovrebbe funzionare",
+        "interactions":  {
             "no-item": {
-                "message": "spostando il vaso noti qualcosa di interessante",
-                "transform": "K"
+                "message": "Ti metti addosso il paracadute e ti lanci dal balconcino",
+                "game_over": "Hai provato ad aprire il paracadute, ma purtroppo era rotto, ripperoni"
             }
         }
     },
 
-    "C": {
-        "name": "candelabro",
-        "description": "un vecchio candelabro arrugginito",
-        "color": "yellow",
-        "interactions": {
-            "V": {
-                "message": "mmm, ha proprio senso... abra cadabra!",
-                "transform": " ",
-                "pickup": true
-            },
-            "C": {
-                "message": "mindfuckkkkk!!!!",
-                "transform": "U"
-            }
-        }
-    },
-
-    "U": {
-        "name": "unicorno",
-        "description": "che splendido esemplare fatato!",
+    "0": {
+        "name": "porta",
         "color": "blue",
-        "interactions": {
+        "description": "E' una porta",
+        "interactions":  {
             "no-item": {
-                "message": "che splendida sensazione",
-                "win": "voli via contento e vivrai una vita fatta di soddisfazioni cucciolose"
-            },
-
-            "L": {
-                "message": "quello che una volta  era un leggiadro  unicorno ora e' un unicorno obeso! non volera' mai piu'",
-                "game_over": "peccato!"
+                "message": "si apre",
+                "move_to_room": 0
             }
         }
     },
 
-    "K": {
-        "name": "chiave",
-        "description": "e' una piccola chiave",
-        "color": "yellow",
-        "interactions": {
+    "1": {
+        "name": "porta",
+        "color": "blue",
+        "description": "E' una porta",
+        "interactions":  {
             "no-item": {
-                "message": "la raccogli",
-                "transform": " ",
-                "pickup": true
+                "message": "si apre",
+                "move_to_room": 1
             }
         }
     },
 
-    "+": {
-        "name": "interruttore",
-        "description": "e' un interruttore posizionato su ACCESO",
-        "color": "black",
-        "interactions": {
-            "no-item": { 
-                "message": "lo premi",
-                "transform": "-"
+    "2": {
+        "name": "porta",
+        "color": "blue",
+        "description": "E' una porta",
+        "interactions":  {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 2
             }
         }
     },
 
-    "-": {
-        "name": "interruttore",
-        "description": "e' un interruttore posizionato su SPENTO",
-        "color": "black",
-        "interactions": {
-            "no-item": { 
-                "message": "lo premi",
-                "transform": "+"
+    "3": {
+        "name": "scalinate",
+        "color": "red",
+        "description": "sono delle scalinate",
+        "interactions":  {
+            "no-item": {
+                "message": "proviamo a salire",
+                "move_to_room": 3
             }
-        }  
+        }
+    },
+
+    "4": {
+        "name": "porta",
+        "color": "blue",
+        "description": "E' una porta",
+        "interactions":  {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 4
+            }
+        }
+    },
+
+    "5": {
+        "name": "porta",
+        "color": "blue",
+        "description": "E' una porta",
+        "interactions":  {
+            "no-item": {
+                "message": "si apre",
+                "move_to_room": 5
+            }
+        }
+    },
+
+    "6": {
+        "name": "passaggio segreto",
+        "color": "black",
+        "description": "E' un passaggio segreto, chissa' dove portera'...",
+        "interactions":  {
+            "no-item": {
+                "message": "Lo attraversi...",
+                "move_to_room": 3
+            }
+        }
     }
 }

@@ -1,19 +1,37 @@
 {
     "0": {
-        "name": "Sala",
-        "description": "Questo luogo e' abbastanza accogliente nonostante il senso di claustrofobia che ti trasmette",
+        "name": "Torre",
+        "description": "Questo luogo e' abbastanza inquietante, bisogna trovare il modo di uscire da questa torre...",
         "color": "white"
     },
 
     "1": {
-        "name": "Cucina",
-        "description": "E' tutto molto disordinato. Sembra che nessuno abbia riordinato da molto tempo",
-        "color": "red"
+        "name": "1° Piano",
+        "description": "E' tutto molto strano... parte del soffitto è crollato...",
+        "color": "yellow"
     },
     
     "2": {
-        "name": "Sogno",
-        "description": "sei evidentemente in un sogno",
+        "name": "Sgabuzzino",
+        "description": "Questo è lo sgabuzzino, è tutto così sporco...",
         "color": "black"
+    },
+
+    "3": {
+        "name": "Scalinate",
+        "description": "Queste scalinate portano all'ultimo piano della torre ",
+        "color": "white"
+    },
+
+    "4": {
+        "name": "Ultimo piano",
+        "description": "Questo è l'ultimo piano della torre, parte del pavimento è crollato...",
+        "color": "cyan"
+    },
+
+    "5": {
+        "name": "Balconcino",
+        "description": "Questo balcone è mal ridotto, ma da qui si puo' ammirare un bellissimo paesaggio",
+        "color": "red"
     }
 }
