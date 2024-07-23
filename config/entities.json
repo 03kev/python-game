@@ -30,7 +30,7 @@
         }
     },
 
-    "A": {
+    "H": {
         "name": "armadio",
         "color": "yellow",
         "description": "E' un armadio vintage",
@@ -128,7 +128,7 @@
         }
     },
 
-    "S": {
+    "E": {
         "name": "sedia",
         "color": "green",
         "description": "Una sedia molto bella e comoda",
